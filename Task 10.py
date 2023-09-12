@@ -13,11 +13,16 @@ while not num_n.isdigit():
     num_n = input("Введите число монеток: ")
 num_n = int(num_n)
 print(f'{num_n} -> ', end='')
-count = 0
-while num_n > 0:
+count_tails = 0
+count_heads = 0
+for i in range(num_n,0,-1):
     value = randint(0, 1)
     print(f'{value} ', end='')
     if value == 0:
-        count += 1
-    num_n -= 1
-print(f'\n{count}')
+        count_tails += 1
+    else:
+        count_heads += 1
+if count_tails > count_heads:
+    print(f'\n{count_heads}')
+else:
+    print(f'\n{count_tails}')
