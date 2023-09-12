@@ -15,7 +15,7 @@ num_n = int(num_n)
 print(f'{num_n} -> ', end='')
 count_tails = 0
 count_heads = 0
-for i in range(num_n,0,-1):
+for i in range(num_n, 0, -1):
     value = randint(0, 1)
     print(f'{value} ', end='')
     if value == 0:
