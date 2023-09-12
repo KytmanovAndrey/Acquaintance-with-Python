@@ -9,7 +9,7 @@ from random import randint
 
 num_n = input("Введите число монеток: ")
 while not num_n.isdigit():
-    print("Некорректный ввод")
+    print("Некорректный ввод, введите число")
     num_n = input("Введите число монеток: ")
 num_n = int(num_n)
 print(f'{num_n} -> ', end='')
