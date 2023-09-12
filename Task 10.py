@@ -7,17 +7,16 @@
 
 from random import randint
 
-
 num_n = input("Введите число монеток: ")
 while not num_n.isdigit():
     print("Некорректный ввод")
     num_n = input("Введите число монеток: ")
 num_n = int(num_n)
-print(f'{num_n} -> ', end = '')
+print(f'{num_n} -> ', end='')
 count = 0
 while num_n > 0:
-    value = randint(0,1)
-    print(f'{value} ', end = '')
+    value = randint(0, 1)
+    print(f'{value} ', end='')
     if value == 0:
         count += 1
     num_n -= 1
