@@ -68,7 +68,7 @@ def delete_contact():
     data = read_file()
     if contact in data:
         with open('Phonebook.txt', 'w', encoding='utf-8') as data2:
-            data = data.replace(contact, '')
+            data = data.replace(contact + "\n\n", '')
             data2.write(data)
     else:
         print("нет такой записи")
